@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webtoolocean.com/sitemap.xml
