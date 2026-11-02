@@ -28,12 +28,14 @@ export const Process: React.FC = () => {
     <section id="process">
       <div className="wrap">
         <div className="head rv">
-          <h2>From idea to launch in four steps</h2>
+          <h2>From idea to launch in <span className="grad">four steps</span></h2>
         </div>
         <div className="steps">
           {steps.map((step, idx) => (
             <div key={idx} className="step rv">
-              <i className={step.icon}></i>
+              <div className="step-icon">
+                <i className={step.icon} aria-hidden="true"></i>
+              </div>
               <h3>{step.title}</h3>
               <p>{step.desc}</p>
             </div>

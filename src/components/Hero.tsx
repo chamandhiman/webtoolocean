@@ -22,7 +22,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 'builder',
-    color: '#ffc933',
+    color: '#F04E2B',
     pillIcon: 'fa-solid fa-hammer',
     pillText: 'Website Builder',
     title: (
@@ -44,7 +44,7 @@ const slides: Slide[] = [
   },
   {
     id: 'widgets',
-    color: '#b48cff',
+    color: '#7A5CFA',
     pillIcon: 'fa-solid fa-puzzle-piece',
     pillText: 'Widgets Studio',
     title: (
@@ -65,7 +65,7 @@ const slides: Slide[] = [
   },
   {
     id: 'pdf',
-    color: '#ff5a5f',
+    color: '#A84BCC',
     pillIcon: 'fa-solid fa-file-pdf',
     pillText: 'PDF Studio',
     title: (
@@ -125,8 +125,7 @@ export const Hero: React.FC = () => {
         setIsPaused(false);
         setProgKey((k) => k + 1);
       }}
-    >
-      <div className="wrap hg">
+    >      <div className="wrap hg">
         <div>
           <h1 className="sr">WebToolOcean: web design, development and free web tools</h1>
           <div className="stack">

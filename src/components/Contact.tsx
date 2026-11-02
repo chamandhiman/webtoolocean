@@ -10,7 +10,6 @@ export const Contact: React.FC = () => {
         await navigator.clipboard.writeText(email);
         setCopyText('Copied!');
       } else {
-        // Fallback for non-https/legacy contexts
         const textarea = document.createElement('textarea');
         textarea.value = email;
         textarea.style.position = 'fixed';
@@ -24,23 +23,23 @@ export const Contact: React.FC = () => {
     } catch {
       setCopyText(email);
     }
-
-    setTimeout(() => {
-      setCopyText('Copy email address');
-    }, 2000);
+    setTimeout(() => setCopyText('Copy email address'), 2000);
   };
 
   return (
     <section id="contact" style={{ paddingTop: 0 }}>
       <div className="wrap">
         <div className="build rv">
+          {/* Left copy */}
           <div>
-            <h2>We build products. Got an idea?</h2>
+            <h2>We build products.<br />Got an idea?</h2>
             <p>
-              If there’s a tool you wish existed, or a website or app your business
+              If there&apos;s a tool you wish existed, or a website or app your business
               needs, tell us. We turn good ideas into working products.
             </p>
           </div>
+
+          {/* Right panel */}
           <div className="panel">
             <small>Email us your idea</small>
             <a
@@ -51,9 +50,10 @@ export const Contact: React.FC = () => {
             </a>
             <a
               className="btn"
-              href="mailto:webtoolocean@gmail.com?subject=I%20have%20a%20product%20idea&amp;body=Hi%20WebToolOcean%2C%0A%0AMy%20idea%3A%0A"
+              href="mailto:webtoolocean@gmail.com?subject=I%20have%20a%20product%20idea&body=Hi%20WebToolOcean%2C%0A%0AMy%20idea%3A%0A"
             >
-              <i className="fa-solid fa-lightbulb"></i>Share your idea
+              <i className="fa-solid fa-lightbulb" aria-hidden="true"></i>
+              Share your idea
             </a>
             <button
               className="btn ghost"
@@ -61,7 +61,7 @@ export const Contact: React.FC = () => {
               type="button"
               onClick={handleCopyEmail}
             >
-              <i className="fa-regular fa-copy"></i>
+              <i className="fa-regular fa-copy" aria-hidden="true"></i>
               <span>{copyText}</span>
             </button>
           </div>

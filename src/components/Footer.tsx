@@ -6,29 +6,18 @@ export const Footer: React.FC = () => {
   return (
     <footer>
       <div className="wrap">
-        <span>
-          © <span id="yr">{currentYear}</span> WebToolOcean. All rights reserved.
-        </span>
+        <a className="logo" href="#top" aria-label="WebToolOcean home">
+          <img src="/logo.png" alt="WebToolOcean" />
+        </a>
+        <span>© {currentYear} WebToolOcean. All rights reserved.</span>
         <nav aria-label="Products">
-          <a
-            href="https://builder.webtoolocean.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://builder.webtoolocean.com/" target="_blank" rel="noopener noreferrer">
             Website Builder
           </a>
-          <a
-            href="https://pdf.webtoolocean.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://pdf.webtoolocean.com/" target="_blank" rel="noopener noreferrer">
             PDF Studio
           </a>
-          <a
-            href="https://widgets.webtoolocean.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://widgets.webtoolocean.com/" target="_blank" rel="noopener noreferrer">
             Widgets Studio
           </a>
           <a href="mailto:webtoolocean@gmail.com">Contact</a>
