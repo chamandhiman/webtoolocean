@@ -425,7 +425,7 @@ nav.top {
     display: flex;
     align-items: center;
     gap: 13px;
-    padding: 10px 14px;
+    padding: 9px 12px;
     border-radius: 12px;
     text-decoration: none;
     transition: background 0.18s ease, transform 0.18s ease;

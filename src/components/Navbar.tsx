@@ -37,6 +37,13 @@ const products: ProductItem[] = [
     href: 'https://pdf.webtoolocean.com/',
     accent: 'purple',
   },
+  {
+    icon: 'fa-solid fa-image',
+    label: 'Image Tools',
+    desc: 'Compress, resize and convert',
+    href: 'https://image.webtoolocean.com/',
+    accent: 'red',
+  },
 ];
 
 export const Navbar: React.FC = () => {
